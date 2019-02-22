@@ -56,9 +56,7 @@ public class TreeNode {
 	    {
 	    	if(v==val)
 	    		return leftsize;
-	    	else if(v<val)
-	    		return left.getRank(v);
-	    	else
-	    		return leftsize+1+right.getRank(v);
+	    	else 
+	    		return v<val?left.getRank(v):leftsize+1+right.getRank(v);
 	    }
 }
