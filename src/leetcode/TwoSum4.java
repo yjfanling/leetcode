@@ -3,9 +3,6 @@ package leetcode;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
-
-import org.junit.Test;
-
 public class TwoSum4 {
 	public boolean findTarget(TreeNode root, int k) {
 		if(root==null)
