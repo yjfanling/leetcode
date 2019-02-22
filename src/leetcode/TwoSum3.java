@@ -32,14 +32,4 @@ public class TwoSum3 {
 		}
 		return false;
 	}
-	@Test
-	public void test(){
-		TwoSum3 t=new TwoSum3();
-		t.add(6);
-		t.add(3);
-		t.add(8);
-		t.add(2);
-		System.out.println(t.find(4));
-		System.out.println(t.find(7));
-	}
 }
