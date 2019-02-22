@@ -42,10 +42,4 @@ public class TwoSum {
 		}
 		return null;
 	}
-	@Test
-	public void test(){
-		int[] a={2,4,3,6,7,2,4,2,6,3,7};
-		int[] result=twoSum(a, 4);
-		System.out.println(result[0]+","+result[1]);
-	}
 }
