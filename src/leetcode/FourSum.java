@@ -94,10 +94,5 @@ public class FourSum {
 //        	}
 //        return res;
 //	}
-	@Test
-	public void test(){
-		int[] nums={0,0,0,0};
-		int target=0;
-		System.out.println(fourSum(nums, target));
-	}
+
 }
