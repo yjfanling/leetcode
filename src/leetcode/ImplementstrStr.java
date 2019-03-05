@@ -45,10 +45,4 @@ public class ImplementstrStr {
 			
 		return -1;
 	}
-	@Test
-	public void test(){
-		String s="mississippi";
-		String l="issip";
-		System.out.println(strStr(s, l));
-	}
 }
