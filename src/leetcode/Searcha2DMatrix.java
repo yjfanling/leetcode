@@ -39,6 +39,22 @@ public class Searcha2DMatrix {
         }
         return false;
     }
+	public boolean searchMatrix1(int[][] matrix, int target) {
+		if(matrix.length==0||matrix==null)
+        	return false;
+        int n=matrix.length,m=matrix[0].length,start=0,end=n*m-1;
+        while(start<=end)
+        {
+        	int mid=(start+end)/2;
+        	if(matrix[mid/m][mid%m]==target)
+        		return true;
+        	else if(matrix[mid/m][mid%m]<target)
+        		start=mid+1;
+        	else
+        		end=mid-1;
+        }
+		return false;
+	}
 	@Test
 	public void test(){
 		int[][] matrix={{1,2,5,7},{10,11,16,20},{23,30,34,50}};
