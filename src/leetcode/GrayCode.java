@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Queue;
 
 public class GrayCode {
 	public List<Integer> grayCode(int n) {
@@ -14,7 +15,7 @@ public class GrayCode {
 		// TODO Auto-generated method stub
 		List<Integer> list = new ArrayList<Integer>();
 		if (n == 0)
-			list.add(0);
+			list.add(0); 
 		else if (n == 1) {
 			Integer[] array = { 0, 1};
 			Collections.addAll(list, array);
